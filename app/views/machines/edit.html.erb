@@ -1,0 +1,17 @@
+<h1><%= "Edit machine: #{ @machine_to_edit.to_s }" %></h1>
+
+<%= form_for @machine_to_edit do | f | %>
+    <%= label_tag "Edit brand:" %>
+    <%= f.text_field :brand %><br /><br />
+
+    <%= label_tag "Edit model:" %>
+    <%= f.text_field :model %><br /><br />
+
+    <%= label_tag "Edit bobbin class:" %>
+    <%= f.text_field :bobbin %><br /><br />
+
+    <%= label_tag "Edit needle size:" %>
+    <%= f.text_field :needle %><br /><br />
+    
+    <%= f.submit "Edit this machine" %>
+<% end %>

@@ -1,0 +1,6 @@
+<h1><%= "Machine details: #{ @this_machine.to_s }" %></h1>
+<ul>
+    <li><%= "Bobbin class: #{ @this_machine.bobbin }" %></li>
+    <li><%= "Needle style: #{ @this_machine.needle }" %></li>
+</ul>
+<%= link_to "Delete this machine", delete_machine_path( @this_machine ) %> | <%= link_to "View all machines", machines_path %>

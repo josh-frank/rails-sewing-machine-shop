@@ -1,0 +1,17 @@
+<h1>Create a new machine</h1>
+
+<%= form_for @new_machine do | f | %>
+    <%= label_tag "Brand:" %>
+    <%= f.text_field :brand %><br /><br />
+
+    <%= label_tag "Model:" %>
+    <%= f.text_field :model %><br /><br />
+
+    <%= label_tag "Bobbin class:" %>
+    <%= f.text_field :bobbin %><br /><br />
+
+    <%= label_tag "Needle size:" %>
+    <%= f.text_field :needle %><br /><br />
+    
+    <%= f.submit "Create machine" %>
+<% end %>

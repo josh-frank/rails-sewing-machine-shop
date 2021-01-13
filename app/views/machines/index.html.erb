@@ -1,0 +1,10 @@
+<h1>View all machines</h1>
+
+<ul>
+    <% @all_machines.each do | machine | %>
+        <li>
+            <%= link_to "#{ machine }", machine_path( machine ) %> | <%= link_to "Edit", edit_machine_path( machine ) %> | <%= link_to "Delete", delete_machine_path( machine ) %>
+        </li>
+    <% end %>
+</ul>
+<%= link_to "New machine", new_machine_path %>
